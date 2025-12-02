@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244, 235, 218);
+}
+#div1{
+    position: relative;
+    top: 25px;
+    margin-top: 10px;
+    border: 4px solid black;
+    height: 540px;
+    width: 381px;
+    background-color: #222222;
+}
+.buttons{
+    height:90px;
+    width: 90px;
+    font-weight: bolder;
+    font-size: larger;
+    margin : 1px 1px;
+    background-color: #444444;
+    color: #ff8c00;
+}
+#display{
+    border: none;
+    margin:2px;
+    height: 70px;
+    width: 374px;
+    background-color: #333333;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.b1{
+    position: relative;
+    left:96px;
+}
+#equal{
+    color: #ff4d00;
+}
