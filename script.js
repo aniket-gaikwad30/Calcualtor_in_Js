@@ -1,2 +1,2 @@
 let str='';
-document.querySelector('#display').value=str;
+document.querySelector('#display').value=str; 
