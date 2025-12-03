@@ -9,7 +9,7 @@
     <div id="div1">
         <input type="text" id="display" readonly>
         <button class="buttons" onclick="str='';document.querySelector('#display').value=str;">AC</button>
-        <button class="buttons" onclick="str=str.substring(0, str.length - 1);document.querySelector('#display').value=str;">⌫ </button>
+        <button class="buttons" onclick="str=str = String(str).substring(0, str.length - 1);document.querySelector('#display').value=str;">⌫ </button>
         <button class="buttons" onclick="str+='%';document.querySelector('#display').value=str;">%</button>
         <button class="buttons" onclick="str+='/';document.querySelector('#display').value=str;">÷</button>
         <button class="buttons" onclick="str+='7';document.querySelector('#display').value=str;">7</button>
@@ -26,7 +26,7 @@
         <button class="buttons" onclick="str+='+';document.querySelector('#display').value=str;">+</button>
         <button class="buttons b1" onclick="str+='0';document.querySelector('#display').value=str;">0</button>
         <button class="buttons b1" onclick="str+='.';document.querySelector('#display').value=str;">.</button>
-        <button class="buttons b1" id="equal" onclick="let res=eval(str);if(res===undefined){res='';}; str=res;document.querySelector('#display').value=str;">=</button>
+        <button class="buttons b1" id="equal" onclick="let res=eval(str); if(res===undefined){res='';}; str=String(res);document.querySelector('#display').value=str;">=</button>
     </div>
     <script src="script.js"></script>
 </body>
